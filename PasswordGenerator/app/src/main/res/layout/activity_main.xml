@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frasse.passwordgenerator.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Password"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Generate New Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeneratePassword"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:onClick="GenerateNewPassword"/>
+
+    <CheckBox
+        android:text="Use Dictionary Generation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/DictionaryPass"
+        android:layout_marginTop="99dp"
+        android:layout_below="@+id/GeneratePassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Save Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GeneratePassword"
+        android:id="@+id/button3"
+        android:layout_alignRight="@+id/GeneratePassword"
+        android:layout_alignEnd="@+id/GeneratePassword"
+        android:layout_alignLeft="@+id/GeneratePassword"
+        android:layout_alignStart="@+id/GeneratePassword"/>
+
+</RelativeLayout>
